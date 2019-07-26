@@ -179,7 +179,7 @@ function main {
         echo "source ~/$NAME/config/tmux/sample.tmux.conf" >> ~/.tmux.conf
     fi
 
-    # Check sl
+    # Check sl  
     if [ "$(whoami)" != "jamfly" ]; then
         echo "小火車是信仰！"
         if ! command -v sl > /dev/null 2>&1 jamfly; then
