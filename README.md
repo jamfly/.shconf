@@ -18,4 +18,4 @@ bash -c "$(curl -L https://raw.githubusercontent.com/jamfly/.shconf/master/insta
 bash -c "$(wget -O- https://raw.githubusercontent.com/jamfly/.shconf/master/install.sh)"
 ```
 
-The special font-type that Powerline may need was put in the `font` directory.
+Powerline may need the special font-type which is put in the `font` directory.
