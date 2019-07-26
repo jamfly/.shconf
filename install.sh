@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 NAME=".shconf"
-URL="https://github.com/yaoandy107/$NAME"
+URL="https://github.com/jamfly/$NAME"
 
 
 # Install application
