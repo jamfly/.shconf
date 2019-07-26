@@ -11,12 +11,13 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 # 左側
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable vcs status vi_mode)
 # 右側
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(ram time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time status ram virtualenv docker_machine)
 # 若當前登入的帳號為你的帳號 xxx，就不用特別顯示出來
-DEFAULT_USER="yaoandy107"
+DEFAULT_USER="jamfly"
 # 使用 nerd font 時可以顯示更多 icon。詳情請參考 powerlevel9k wiki 
 POWERLEVEL9K_MODE='nerdfont-complete'
 
@@ -95,11 +96,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 alias l='ls -lh'
 alias ll='ls -alh'
 alias la='ls -a'
-alias blog='hexo clean; hexo d -g'
-alias ip='curl orange.tw'
 
 # zsh-autosuggestions
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
